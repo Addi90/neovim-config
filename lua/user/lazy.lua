@@ -46,6 +46,7 @@ local specs = {
     plugin("nvim-dap"),
     plugin("nvim-foldsign"),
     plugin("nvim-lspconfig"),
+    plugin("nvim-nio"),
     plugin("nvim-soil"),
     plugin("nvim-tree"),
     plugin("nvim-treesitter-context"),
