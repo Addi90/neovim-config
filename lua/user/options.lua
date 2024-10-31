@@ -87,13 +87,13 @@ vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 vim.opt.inccommand = 'split'
 
 -- Don't show which line your cursor is on
-vim.opt.cursorline = false
+vim.opt.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 8
 
 -- Color the nth column of the editor.
-vim.opt.colorcolumn = { "80", "120" }
+vim.opt.colorcolumn = { "120" }
 
 -- Show relative numbers as default.
 vim.opt.relativenumber = true
@@ -106,7 +106,3 @@ vim.opt.wrap = false
 vim.opt.hlsearch = true
 -- While typing a search command, show where the pattern, as it was typed so far, matches.
 vim.opt.incsearch = true
-
--- add binaries installed by mason.nvim to path
-local is_windows = vim.loop.os_uname().sysname == "Windows_NT"
-vim.env.PATH = vim.fn.stdpath("data") .. "/mason/bin" .. (is_windows and ";" or ":") .. vim.env.PATH
