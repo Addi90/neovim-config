@@ -32,6 +32,7 @@ local specs = {
     plugin("copilot"),
     plugin("fidget"),
     plugin("gitsigns"),
+    plugin("go"),
     plugin("harpoon"),
     plugin("indent-blankline"),
     plugin("leap"),
